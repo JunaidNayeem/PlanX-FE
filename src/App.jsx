@@ -1,16 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import HomePage from "./Pages/HomePage.jsx";
+import { Layout } from "antd";
+import React from "react";
+import Features from "./components/Features";
+import FooterSection from "./components/FooterSection";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+	return (
+		<Layout>
+			<Navbar />
+			<Features />
+			<FooterSection />
+		</Layout>
+	);
 }
-
 export default App;
