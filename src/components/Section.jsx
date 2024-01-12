@@ -1,5 +1,4 @@
 import { Avatar, Button, Col, List, Row, Typography, theme } from "antd";
-import React from "react";
 import { greenCheck } from "../../data";
 const { Title } = Typography;
 
@@ -16,7 +15,7 @@ function Section({ title, data, image, colOrder }) {
 				borderRadius: borderRadiusLG,
 			}}
 		>
-			<Row gutter={128}>
+			<Row gutter={128} align="middle">
 				<Col order={colOrder}>
 					<img src={image} alt="Blogs" />
 				</Col>

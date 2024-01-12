@@ -13,11 +13,12 @@ function Navbar({ handleClick, isDarkMode }) {
 				width: "100%",
 				display: "flex",
 				alignItems: "center",
+				background: isDarkMode ? "#001529" : "#fff",
 			}}
 		>
 			<div className="demo-logo" />
 			<Menu
-				theme="dark"
+				theme={isDarkMode ? "dark" : "light"}
 				mode="horizontal"
 				defaultSelectedKeys={["2"]}
 				items={items}

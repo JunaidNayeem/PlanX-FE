@@ -7,11 +7,7 @@ const { Title, Paragraph } = Typography;
 
 function Features() {
 	return (
-		<Content
-			style={{
-				padding: "0 48px",
-			}}
-		>
+		<Content className="content">
 			<Flex vertical align="center">
 				<Title style={{ fontWeight: "bolder" }}>Features</Title>
 				<Paragraph strong style={{ fontSize: "18px", textAlign: "center" }}>
