@@ -14,7 +14,7 @@ function Features() {
 		>
 			<Flex vertical align="center">
 				<Title style={{ fontWeight: "bolder" }}>Features</Title>
-				<Paragraph strong style={{ fontSize: "18px" }}>
+				<Paragraph strong style={{ fontSize: "18px", textAlign: "center" }}>
 					Optimize teamwork with our streamlined project
 				</Paragraph>
 			</Flex>
