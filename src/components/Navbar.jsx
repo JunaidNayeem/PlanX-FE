@@ -1,9 +1,9 @@
-import { Layout, Menu } from "antd";
-import React from "react";
+import { Button, Divider, Layout, Menu, Flex } from "antd";
 import { navItems as items } from "../../data";
-const { Header } = Layout;
+import { Moon, Sun } from "lucide-react";
 
-function Navbar() {
+function Navbar({ handleClick, isDarkMode }) {
+	const { Header } = Layout;
 	return (
 		<Header
 			style={{
@@ -27,6 +27,20 @@ function Navbar() {
 					justifyContent: "center",
 				}}
 			/>
+			<Flex align="center">
+				<Button type="primary" danger size="large">
+					Free Trial
+				</Button>
+				<Divider type="vertical" style={{ backgroundColor: "gray" }} />
+				<Button
+					type="primary"
+					shape="circle"
+					size="large"
+					onClick={handleClick}
+				>
+					{isDarkMode ? <Sun /> : <Moon />}
+				</Button>
+			</Flex>
 		</Header>
 	);
 }

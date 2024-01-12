@@ -18,10 +18,10 @@ function Section({ title, data, image, colOrder }) {
 		>
 			<Row gutter={128}>
 				<Col order={colOrder}>
-					<img src={image} alt="Blogs" style={{ width: "300px" }} />
+					<img src={image} alt="Blogs" />
 				</Col>
 				<Col flex={3}>
-					<Title style={{ margin: "25px" }}>{title}</Title>
+					<Title level={2}>{title}</Title>
 					<List
 						itemLayout="horizontal"
 						dataSource={data}
