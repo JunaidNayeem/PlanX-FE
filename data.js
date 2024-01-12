@@ -1,3 +1,8 @@
+import bimg from "./src/assets/images/blog.png";
+import wimg from "./src/assets/images/workflow.png";
+import dimg from "./src/assets/images/doc.png";
+import check from "./src/assets/check.svg";
+
 export const navItems = [
 	{ key: 1, label: "Home" },
 	{ key: 2, label: "Features" },
@@ -35,18 +40,14 @@ export const doc = [
 
 	{
 		title:
-			"Generate well-documented project plans, with enchanced convenience and charm. Share seamlessly via our domain or your subdomain for efficient accessibility among internal parties.",
+			"Generate well-documented project plans, with enhanced convenience and charm. Share seamlessly via our domain or your subdomain for efficient accessibility among internal parties.",
 	},
 ];
 
-export const blogImg =
-	"https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg";
+export const blogImg = bimg;
 
-export const workflowImg =
-	"https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg";
+export const workflowImg = wimg;
 
-export const docImg =
-	"https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg";
+export const docImg = dimg;
 
-export const greenCheck =
-	"https://upload.wikimedia.org/wikipedia/commons/8/8b/Eo_circle_green_white_checkmark.svg";
+export const greenCheck = check;
