@@ -40,7 +40,7 @@ function Hero() {
 			</Flex>
 
 			<div>
-				<img src={Banner} alt="banner" style={{ width: "unset" }} />
+				<img src={Banner} alt="banner" style={{ minWidth: "550px" }} />
 			</div>
 		</Flex>
 	);
