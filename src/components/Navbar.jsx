@@ -13,12 +13,15 @@ function Navbar({ handleClick, isDarkMode }) {
 				width: "100%",
 				display: "flex",
 				alignItems: "center",
-				background: isDarkMode ? "#001529" : "#fff",
+				background: isDarkMode ? "#141414" : "#fff",
+				borderBottom: isDarkMode
+					? "1px solid rgba(253, 253, 253, 0.12)"
+					: "1px solid rgba(5, 5, 5, 0.06)",
 			}}
 		>
 			<div className="demo-logo" />
 			<Menu
-				theme={isDarkMode ? "dark" : "light"}
+				theme="light"
 				mode="horizontal"
 				defaultSelectedKeys={["2"]}
 				items={items}
@@ -26,6 +29,7 @@ function Navbar({ handleClick, isDarkMode }) {
 					flex: 1,
 					minWidth: 0,
 					justifyContent: "center",
+					border: "none",
 				}}
 			/>
 			<Flex align="center">
